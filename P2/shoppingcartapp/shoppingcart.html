@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="totalcarts.js"></script>
+</head>
+<p><h2 style="text-align:center; color:blue"><em><u>Shopping Cart</u></em></h2></p>
+<p>
+    <div id="cartSize" style="text-align: center; margin-left: auto;" onload="cartLength()">
+          
+    </div>
+    <div id="checkOut" style="text-align:center; margin-right:auto;">
+        <a href="checkout2.html">Check Out</a>
+    </div>
+</p>
+
+<body>
+    <div class="container">
+        <div class="card-deck" style="width: 30rem; margin-left:auto; margin-right:auto;">
+            <div class="row">
+            <div class="card">
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFuYW5hfGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title" id="banana">Bananas</h5>
+                <p class="card-text">$2/lb</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><input type="button" value="Add to cart" onclick="addBanana()"/></small>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1590005354167-6da97870c757?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YXBwbGV8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title" id="apple">Green Apples</h5>
+                <p class="card-text">$1/lb</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><input type="button" value="Add to cart" onclick="addApple()"/></small>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1572635148818-ef6fd45eb394?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title" id="lemon">Lemon</h5>
+                <p class="card-text">$1/lb</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><input type="button" value="Add to cart" onclick="addLemon()"/></small>
+              </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1618871736709-0843f4cfc85b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGluZWFwcGxlfGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title" id="pineapple">Pineapple</h5>
+                  <p class="card-text">$2/lb</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"><input type="button" value="Add to cart" onclick="addPineapple()"/></small>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
