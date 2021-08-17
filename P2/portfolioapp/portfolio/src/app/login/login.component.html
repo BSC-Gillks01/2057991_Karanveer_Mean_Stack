@@ -1,0 +1,62 @@
+<div class="loginContain" *ngIf="f1">
+    <h2 style="color:blue;"><u>Login Page</u></h2>
+    <form [formGroup]="loginRef">
+        <label>Username: </label>
+        <input type="text" formControlName="user"/><br/>
+        <label>Password: </label>
+        <input type="password" formControlName="pass"/><br/>
+        <input type="submit" value="submit" (click)="checkUser()" [disabled]="!loginRef.valid"/>
+        <input type="reset" value="reset"/>
+    </form>                               
+    {{msg}}
+    <hr>
+    <input type="button" value="Register Here" (click)="boolChange()"/>
+</div>
+
+<div class="regContain" *ngIf="f2">
+    <h2 style="color:blue;"><u>Registration Form</u></h2>
+    <form [formGroup]="registerRef"   >
+        <label>First Name: </label>
+        <input type="text" formControlName="fname"/><br/>
+        <label>Last Name: </label>
+        <input type="text" formControlName="lname"/><br/>
+        <label>Username: </label>
+        <input type="text" formControlName="user" #userRef/><br/>
+        <label>Password: </label>
+        <input type="password" formControlName="pass" #passRef/><br/>
+        <input type="submit" value="Register" (click)="registerUser(userRef, passRef)" [disabled]="!registerRef.valid"/>
+        <input type="reset" value="Reset"><br/>
+        {{msg}}
+        <hr>
+        <input type="button" value="Login Page" (click)="boolBack()"/>
+    </form>
+</div>
+
+<div class="portfolioContain" *ngIf="flag">
+    <h2 style="color:blue;"><u>My Portfolio</u></h2><br/>
+    <h3>Welcome {{name}}</h3>
+    <form [formGroup]="portfolioRef">
+        <label>Contact Name</label>
+        <input type="text" formControlName="contactName" #contactRef/><br/>
+        <label>Phone No.</label>
+        <input type="text" formControlName="phoneNumber" #phoneRef/><br/>
+        <input type="button" value="Save" (click)="contactDeets(contactRef, phoneRef)"/>
+        <hr>
+        <input type="button" value="Contact Details" (click)="displayDeets()"><br/>
+        <table border="1">
+            <thead>
+                <th>Contact</th>
+                <th>Number</th>
+            </thead>
+            <tbody>
+                <td>{{contacts.contactName}}</td>
+                <td>{{contacts.phoneNumber}}</td>
+            </tbody>
+        </table>
+        
+        
+        
+        
+    </form>
+</div>
+
