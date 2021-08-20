@@ -1,0 +1,15 @@
+<div>
+    <h2>Exam using TDF</h2>
+    <form [formGroup]="myForm">
+        <div *ngFor="let q of examData">
+            <p>{{q.question}}</p>
+            <input type="radio" formControlName={{q.question}} value={{q.opt1}}/>{{q.opt1}}<br/>
+            <input type="radio" formControlName={{q.question}} value={{q.opt2}}/>{{q.opt2}}<br/>
+            <input type="radio" formControlName={{q.question}} value={{q.opt3}}/>{{q.opt3}}<br/>
+            <input type="radio" formControlName={{q.question}} value={{q.opt4}}/>{{q.opt4}}<br/>
+            {{msg}}
+        </div>
+        {{total}}<br/>
+        <input type="submit" value="submit" (click)="submit()">
+    </form>
+</div>

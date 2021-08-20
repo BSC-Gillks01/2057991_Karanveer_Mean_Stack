@@ -1,0 +1,12 @@
+[
+    {"question":"What boxer is known as the Peoples Champion?", "opt1":"Mohammed Ali", "opt2": "Floyd Mayweather Jr.", "opt3":"Mike Tyson","opt4":"Rocky Balboa", "correctOpt":"Mohammed Ali"},
+    {"question":"What color is blood before oxygen mixes in it?", "opt1":"red", "opt2": "purple", "opt3":"blue","opt4":"orange", "correctOpt":"blue"},
+    {"question":"How many championships did Michael Jordan win with the Chicago Bulls?", "opt1":"4", "opt2": "3", "opt3":"5","opt4":"6", "correctOpt":"6"},
+    {"question":"Which country discovered tea?", "opt1":"United Kingdom", "opt2": "Ireland", "opt3":"China","opt4":"India", "correctOpt":"China"},
+    {"question":"Which country invented hotdogs?", "opt1":"Germany", "opt2": "Poland", "opt3":"Russia","opt4":"Mexico", "correctOpt":"Germany"},
+    {"question":"When Michael Jordan retired from basketball, which sport did he begin to play professionally?", "opt1":"Golf", "opt2": "Baseball", "opt3":"Tennis","opt4":"Soccer", "correctOpt":"Baseball"},
+    {"question":"How many planets are in our solar system?", "opt1":"9", "opt2": "10", "opt3":"8","opt4":"7", "correctOpt":"8"},
+    {"question":"What type of fish is Nemo?", "opt1":"Clownfish", "opt2": "Goldfish", "opt3":"Salmon","opt4":"Orange fish", "correctOpt":"Clownfish"},
+    {"question":"What are a group of lions called?", "opt1":"Group of lions", "opt2": "Liger", "opt3":"Lager","opt4":"Pride", "correctOpt":"Pride"},
+    {"question":"Which planet in our solar system has a ring around it?", "opt1":"Saturn", "opt2": "Jupiter", "opt3":"Pluto","opt4":"Mars", "correctOpt":"Saturn"}
+]
