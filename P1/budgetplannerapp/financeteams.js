@@ -24,7 +24,7 @@ function displayData(){
     var tableContent=""
     var counter = 0;
     var total = "Budget Total: $";
-    for(var i = 0; i < budJson.length; i++){
+        
         tableContent += "<tr>";
         tableContent += "<td>" + budJson[i].Client_Name +"</td>";
         tableContent += "<td>" + budJson[i].Project_Name + "</td>";

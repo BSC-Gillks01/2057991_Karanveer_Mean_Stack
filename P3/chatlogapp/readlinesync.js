@@ -9,7 +9,6 @@ let email = readline.questionEMail("Enter your email address ");
 let date = Date()
 information = {Firstname:fname, Lastname: lname, Sex: gender, Email: email, Timedate: date}
 infos.push(information)
-//let infoString = JSON.stringify(infoArr)
 fs.writeFileSync("log.json", JSON.stringify(infos), 
         console.log("Data entry added")
 

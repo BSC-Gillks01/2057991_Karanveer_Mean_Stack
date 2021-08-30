@@ -1,7 +1,9 @@
-[{"Firstname":"P","Lastname":"G","Sex":"M","Email":"P@G.com","Timedate":"Tue Aug 24 2021 17:17:37 GMT-0400 (Eastern Daylight Time)"},
-    {"Firstname":"Cathie","Lastname":"Wood","Sex":"M","Email":"Cathiewood12@gmail.com","Timedate":"Tue Aug 24 2021 17:25:27 GMT-0400 (Eastern Daylight Time)"},
-    {"Firstname":"Rusell","Lastname":"Westbrook","Sex":"Male","Email":"RussWest44@nba.com","Timedate":"Tue Aug 24 2021 17:27:30 GMT-0400 (Eastern Daylight Time)"},
-    {"Firstname":"Elon","Lastname":"Musk","Sex":"Male","Email":"Elon@Tesla.com","Timedate":"Tue Aug 24 2021 17:27:57 GMT-0400 (Eastern Daylight Time)"},
-    {"Firstname":"Karanveer","Lastname":"Gill","Sex":"Male","Email":"KaranGill@gmail.com","Timedate":"Tue Aug 24 2021 17:28:17 GMT-0400 (Eastern Daylight Time)"},
-    {"Firstname":"Michael","Lastname":"Jordan","Sex":"Male","Email":"MichaelJordan@GOAT.com","Timedate":"Tue Aug 24 2021 17:28:52 GMT-0400 (Eastern Daylight Time)"}
+[
+{"Firstname":"P","Lastname":"G","Sex":"M","Email":"P@G.com","Timedate":"Tue Aug 24 2021 17:17:37 GMT-0400 (Eastern Daylight Time)"},
+{"Firstname":"Cathie","Lastname":"Wood","Sex":"M","Email":"Cathiewood12@gmail.com","Timedate":"Tue Aug 24 2021 17:25:27 GMT-0400 (Eastern Daylight Time)"},
+{"Firstname":"Rusell","Lastname":"Westbrook","Sex":"Male","Email":"RussWest44@nba.com","Timedate":"Tue Aug 24 2021 17:27:30 GMT-0400 (Eastern Daylight Time)"},
+{"Firstname":"Elon","Lastname":"Musk","Sex":"Male","Email":"Elon@Tesla.com","Timedate":"Tue Aug 24 2021 17:27:57 GMT-0400 (Eastern Daylight Time)"},
+{"Firstname":"Karanveer","Lastname":"Gill","Sex":"Male","Email":"KaranGill@gmail.com","Timedate":"Tue Aug 24 2021 17:28:17 GMT-0400 (Eastern Daylight Time)"},
+{"Firstname":"Michael","Lastname":"Jordan","Sex":"Male","Email":"MichaelJordan@GOAT.com","Timedate":"Tue Aug 24 2021 17:28:52 GMT-0400 (Eastern Daylight Time)"},
+{"Firstname":"Bill","Lastname":"Gates","Sex":"Male","Email":"BillGates@microsoft.com","Timedate":"Tue Aug 24 2021 22:48:07 GMT-0400 (Eastern Daylight Time)"}
 ]

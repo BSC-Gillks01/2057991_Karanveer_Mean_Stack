@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="color: aqua; text-align: center;"><u>Task Tracker</u></h2>
+    <h2 style="color: green;"><u>Add Task</u></h2>
+    <form action="addTask" method="POST">
+        <label>Emp Id: </label>
+        <input type="text" name="empId" required/><br/>
+        <label>Task Id: </label>
+        <input type="text" name="taskId" required/><br/>
+        <label>Task: </label>
+        <input type="text" name="task" required/><br/>
+        <label>Deadline: </label>
+        <input type="date" name="deadline" required/><br/>
+        <input type="submit" value="Add Task"/>
+        <input type="reset" value="reset"/>
+    </form>
+    <br/><br/>
+    <form action="deleteTask" method="GET">
+        <h2 style="color: red;"><u>Delete Task</u></h2>
+        <label>Task Id: </label>
+        <input type="text" name="findTask"/><br/>
+        <input type="submit" value="Delete Task"/>
+    </form>
+    
+    <form action="taskTable" method="POST">
+        <h2 style="color: blue;"><u>List Task</u></h2>
+        
+        <table style="border: black solid 1px; columns: auto;">
+            <thead>
+                <th>Employee ID</th>
+                <th>Task ID</th>
+                <th>Task</th>
+                <th>Deadline</th>
+            </thead>
+            <tbody id="myTable">
+                
+            </tbody>
+        </table>
+        <br/>
+        <input type="submit" value="Show Task List"/>
+    </form>
+</body>
+</html>
+
