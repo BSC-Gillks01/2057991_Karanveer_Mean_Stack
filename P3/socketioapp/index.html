@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            width: 90%;
+            max-width: 1200px;
+        }
+        #container{
+            border: 1px solid blue;
+            background-color: lightgray;
+            padding: 5px;
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+        
+    </style>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/JavaScript">
+        function clientMessage(){
+            let messages = document.getElementById('clientsMessage').value;
+            let message = "CLIENT: " + messages
+            var socket = io();
+            socket.emit("obj", message);
+            socket.on("obj1", (msg) => {
+            console.log(msg)
+    })
+    document.getElementById('container').innerHTML += "<h4 style='color:blue;'>" + message + "</h4>";
+    document.getElementById('container').innerHTML += `</br><hr>`; 
+    document.getElementById('clientsMessage').value = ""; 
+        }
+
+        function serverMessage(){
+            let messages = document.getElementById('serversMessage').value;
+            let message = "SERVER: " + messages
+            var socket = io();
+            socket.emit("obj1", message);
+            socket.on("obj", (msg)=>{
+                console.log(msg)
+            })
+    document.getElementById('container').innerHTML += "<h4 style='color:red;'>" + message + "</h4>";;
+    document.getElementById('container').innerHTML += `</br><hr>`;  
+    document.getElementById('serversMessage').value = "";
+        }
+
+    </script>
+    
+</head>
+<body>
+    <div id="container" style="text-align: center;">
+        <h2 style="color:purple;">Chat Log</h2>
+    </div><br/>
+        <label>Client text: </label>
+        <input type="text" id="clientsMessage"/>
+        <input type="submit" value="Send" onclick="clientMessage()"/>
+        <br/>
+        <label>Server text: </label>
+        <input type="text" id="serversMessage"/>
+        <input type="submit" value="Send" onclick="serverMessage()"/>
+</body>
+</html>

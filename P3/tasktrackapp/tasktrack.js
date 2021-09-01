@@ -75,7 +75,7 @@ let server = http.createServer((request,response)=> {
             } }
             else if(urlInfo.pathname == "/taskTable"){
                 taskDetails = JSON.parse(fs.readFileSync("task.json").toString());
-                tableContent += `<table style="border: black solid 1px; columns: auto;">
+                tableContent = `<table style="border: black solid 1px; columns: auto;">
                 <thead>
                     <th>Employee ID</th>
                     <th>Task ID</th>
