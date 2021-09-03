@@ -40,8 +40,10 @@
         }
 
         function serverMessage(){
+            var date = new Date();
+            let time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
             let messages = document.getElementById('serversMessage').value;
-            let message = "SERVER: " + messages
+            let message = "SERVER " + time + ": "+ messages
             var socket = io();
             socket.emit("obj1", message);
             socket.on("obj", (msg)=>{
