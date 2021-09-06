@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/JavaScript">
+    function deleted(){
+       let _id = document.getElementById('_id').value
+       console.log(_id)
+        var socket = io()
+        socket.emit("delete", _id);
+        socket.on("server", (msg) => {
+            console.log(msg)
+        })
+    }
+    </script>
+</head>
+<body>
+
+        <h2 style="text-align: center; color: orange;"><u>Update Course</u></h2>
+        <label>Course ID: </label>
+        <input type="text" id="_id" name="_id"/><br/>
+        <input type="submit" value="Delete" onclick="deleted()"/>
+</body>
+</html>

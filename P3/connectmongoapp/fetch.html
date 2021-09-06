@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/socket.io/socket.io.js"></script>
+ <script type="text/JavaScript">
+        function showTable(){
+        let courseData = {}
+       
+        var socket = io()
+        socket.emit("fetch", courseData);
+        socket.on("obj", (tableContent) => {
+            document.getElementById('myTable').innerHTML += tableContent;
+        })          
+        
+        socket.on("server", (msg) => {
+            console.log(msg)
+        })
+}    
+    </script>
+</head>
+<body>
+    <table style="border: 1px solid black;">
+    <thead>
+        <th>Course ID</th>
+        <th>Course Name</th>
+        <th>Description</th>
+        <th>Amount</th>
+    </thead>
+    <tbody id="myTable">
+
+ 
+    <br>
+    <input type="submit" value="Display" onclick="showTable()">
+</body>
+</html>
