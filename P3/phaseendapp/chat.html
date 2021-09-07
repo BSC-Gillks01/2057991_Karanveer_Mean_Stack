@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #clientsMessage {
+            flex-direction: column;
+            height: 10vh;
+            width: 25%;
+            max-width: 1200px;
+        }
+        #container{
+            border: 1px solid blue;
+            background-color: lightgray;
+            padding: 5px;
+            flex-grow: 1;
+            overflow-y: auto;
+        }       
+        #chatboxes{
+            text-align: center;
+        }
+    </style>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/JavaScript">
+        function clientMessage(){
+            let clientName = document.getElementById('clientName').value
+            let clientsMessage = document.getElementById('clientsMessage').value
+            let msgObj = {clientName, clientsMessage}
+            console.log(msgObj);
+            var socket = io()
+            socket.emit("chat", msgObj)
+            socket.on("server", (msg) => {
+                console.log(msg)    
+            })
+        }
+    </script>
+</head>
+<body>
+    <div id="container" style="text-align: center;">
+        <h2 style="color:purple;">Chat Log</h2>
+    </div><br/>
+    <div id="chatboxes">
+        <label>Name: </label>
+        <input type="text" id="clientName"/><br/><br/>
+        <label>Chat: </label><br/>
+        <input type="text" id="clientsMessage"/><br/>
+        <input type="submit" value="Send" onclick="clientMessage()"/>
+        <br/>
+    </div>
+</body>
+</html>

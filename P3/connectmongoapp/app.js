@@ -95,8 +95,7 @@ socket.on("fetch", (courseData) => {
                </tr>`     
             })
             tableContent += "</tbody></table>"
-            
-            socket.emit("obj", tableContent)
+            socket.emit("fetch", tableContent)
         } else {
             console.log(err)
         }

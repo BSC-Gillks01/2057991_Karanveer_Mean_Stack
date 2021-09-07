@@ -12,7 +12,7 @@
        
         var socket = io()
         socket.emit("fetch", courseData);
-        socket.on("obj", (tableContent) => {
+        socket.on("fetch", (tableContent) => {
             document.getElementById('myTable').innerHTML += tableContent;
         })          
         
